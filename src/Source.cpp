@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <cstdio>
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevHinstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow) {
 
@@ -10,7 +11,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevHinstanc
 	}
 
 	Engine engine;
-	if (engine.Initialize(hInstance, "DirectX11", "DirectX11Class", 800, 600))
+	if (engine.Initialize(hInstance, "DirectX11", "DirectX11Class", 1600, 900))
 	{
 		while (engine.ProcessMessages() == true)
 		{
